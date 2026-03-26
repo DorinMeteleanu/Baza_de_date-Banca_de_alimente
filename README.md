@@ -1,4 +1,4 @@
-# Baza_de_date-Banca_de_alimente
+# Baza de date - Banca de alimente
 Proiect pentru cursul de Baze de Date - gestionarea unei bănci de alimente
 
 O aplicație pentru gestionarea unei Bănci de Alimente oferă administratorilor posibilitatea să înregistreze și să monitorizeze trasabilitatea produselor, de la momentul recepției de la donatori, până la distribuirea acestora către beneficiari (centre sociale, ONG-uri, familii defavorizate).
