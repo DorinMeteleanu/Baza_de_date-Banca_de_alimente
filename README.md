@@ -2,3 +2,5 @@
 Proiect pentru cursul de Baze de Date - gestionarea unei bănci de alimente
 
 text sa vedem daca am legat github de vs code bine
+
+text aditional
