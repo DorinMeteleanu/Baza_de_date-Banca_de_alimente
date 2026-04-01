@@ -81,3 +81,6 @@ Această aplicație este destinată gestionării eficiente a activității unei 
 
 ## 5. Diagrama ERD
 ![erd](./BD_erd.png)
+
+## 6. Diagrama conceptuală
+![erd](./BD_conceptuala.png)
