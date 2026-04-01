@@ -89,7 +89,7 @@ Această aplicație este destinată gestionării eficiente a activității unei 
 | id_voluntar | NUMBER(13) | PK | | | Identificator unic |
 | nume | VARCHAR2(50) | NOT NULL | | | |
 | prenume | VARCHAR2(50) | NOT NULL | | | |
-| telefon | VARCHAR2(15) | NOT NULL, UNIQUE | | | |
+| telefon | VARCHAR2(15) | NOT NULL | | | |
 | email | VARCHAR2(50) | UNIQUE | | | |
 
 ### DONATOR (Părinte)
@@ -103,14 +103,14 @@ Această aplicație este destinată gestionării eficiente a activității unei 
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | id_donator | NUMBER(13) | PK, FK | | | Referință către DONATOR |
 | nume_companie| VARCHAR2(100)| NOT NULL | "Supermarket SRL" | | |
-| cui | VARCHAR2(20) | NOT NULL, UNIQUE | "RO123456" | | Cod Unic de Înregistrare |
+| cui | VARCHAR2(20) | NOT NULL, UNIQUE | | | Cod Unic de Înregistrare |
 
 ### PERS_FIZICĂ (Sub-entitate)
 | atribut | tip de date | constrângeri | valori posibile/exemple | valori implicite | observatii |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | id_donator | NUMBER(13) | PK, FK | | | Referință către DONATOR |
 | cnp | VARCHAR2(13) | NOT NULL, UNIQUE | "1900101..." | | |
-| nume_complet | VARCHAR2(100)| NOT NULL | "Popa Maria" | | |
+| nume_complet | VARCHAR2(100)| NOT NULL | | | |
 
 ### DONAȚIE
 | atribut | tip de date | constrângeri | valori posibile/exemple | valori implicite | observatii |
@@ -125,7 +125,7 @@ Această aplicație este destinată gestionării eficiente a activității unei 
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | id_certificat| NUMBER(13) | PK | | | |
 | id_donatie | NUMBER(13) | FK, UNIQUE, NOT NULL| | | Relație 1:1 cu Donația |
-| serie_doc | VARCHAR2(10) | NOT NULL | "CERT-001" | | |
+| serie | VARCHAR2(10) | NOT NULL | | | |
 
 ### ALIMENT (Părinte)
 | atribut | tip de date | constrângeri | valori posibile/exemple | valori implicite | observatii |
