@@ -1,4 +1,6 @@
-# Baza de date - Banca de alimente, Meteleanu Dorin - Gabriel
+# Baza de date - Banca de alimente
+Meteleanu Dorin - Gabriel, grupa 143
+
 Proiect pentru cursul de Baze de Date - gestionarea unei bănci de alimente
 
 ## 1. Descrierea modelului real și a utilității
@@ -78,9 +80,20 @@ Această aplicație este destinată gestionării eficiente a activității unei 
 - Donație - Certificat (One-to-One)
     - Câte certificate are o donație: 1.
     - Cărei donații îi corespunde un certificat: 1.
+ 
+## 5. Descrierea atributelor
 
-## 5. Diagrama ERD
+### VOLUNTAR
+| atribut | tip de date | constrângeri | valori posibile/exemple | valori implicite | observatii |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| id_voluntar | NUMBER(13) | PK | | | Identificator unic |
+| nume | VARCHAR2(50) | NOT NULL | "Popescu" | | |
+| prenume | VARCHAR2(50) | NOT NULL | "Ion" | | |
+| telefon | VARCHAR2(15) | NOT NULL, UNIQUE | "0712345678" | | |
+| email | VARCHAR2(50) | UNIQUE | "ion@email.com" | | |
+
+## 6. Diagrama ERD
 ![diagrama_erd](./BD_erd.png)
 
-## 6. Diagrama conceptuală
+## 7. Diagrama conceptuală
 ![diagrama_conceptuala](./BD_conceptuala.png)
